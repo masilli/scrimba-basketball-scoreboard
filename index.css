@@ -1,0 +1,104 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: #eee;
+    text-align: center;
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background: #1B244A;
+    padding: 40px;
+    border-radius: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+}
+
+.inside-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: #fff;
+    margin: 0 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+}
+
+.score {
+    color: #B45309;
+    background: #111;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+}
+
+#reset {
+    flex-basis: 100%;
+    background: #B45309;
+}
+
+.btns {
+    margin: 20px 0 0;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    line-height: 1.5rem;
+    border-radius: 4px;
+    padding: .3em .5em;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all ease .3s;
+    user-select: none;
+}
+
+.btns button {
+    border: none;
+    line-height: 1.5rem;
+    border-radius: 4px;
+    color: limegreen;
+    background: none;
+    padding: .3em .5em;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 1px rgba(0,0,0,.5),
+    inset 0 1px 1px rgba(255,255,255,.5);
+    transition: all ease .3s;
+}
+
+.btns button:hover {
+    background: limegreen;
+    color: #1B244A;
+}
+
+#reset button {
+    width: 100%;
+    color: #fff;
+}
+
+#reset button:hover {
+    color: #333;
+    background: #eee;
+}
